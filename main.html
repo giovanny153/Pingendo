@@ -5,7 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+        $("#main_frame").addClass("active");
+        $("#info_doc_frame").addClass("active");
+        $("#form_ele_frame").addClass("active");
+        }); 
+      
+      /*$("#qualin_frame").click(function(){
+      $("#qualin_frame").removeClass("active");
+      $("#info_doc_frame").addClass("active");
+      $("#form_ele_frame").removeClass("active"); });
+  </script>
+</head>
 
 <body>
   <div class="py-5">
@@ -15,13 +32,13 @@
           <img class="img-fluid d-block" src="qualislogolg.png" width="100px">
           <ul class="nav nav-tabs text-dark">
             <li class="nav-item">
-              <a href="#" class="active nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Qualin</a>
+              <a href="#" class="active nav-link" id="qualin_frame"><i class="fa fa-home fa-home"></i>&nbsp;Qualin</a>
             </li>
             <li class="nav-item text-dark">
-              <a href="frame_info_doc.html" class="nav-link"><i class="fa fa-file-text"></i> Informação Documentada</a>
+              <a href="frame_info_doc.html" class="nav-link" id="info_doc_frame"><i class="fa fa-file-text"></i> Informação Documentada</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Formulário Eletrônico</a>
+              <a class="nav-link" href="form_ele_frame_script.html"><i class="fa fa-list-alt" id="form_ele_frame"></i> Formulário Eletrônico</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Logout</a>
@@ -40,9 +57,6 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
